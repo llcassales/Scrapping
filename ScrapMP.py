@@ -13,9 +13,9 @@ def artist_links(url = 'https://www.museodelprado.es/en/the-collection'):
     soup = BeautifulSoup(webpage, 'html.parser')
     # Find all <a> in your HTML that have a not null 'href'. Keep only 'href'.
     links = [a["href"] for a in soup.find_all("a", href=True)]
-    links = [x for x in links if x.startswith('https://www.museodelprado.es/en/the-collection/artist/')]
+    links = [x for x in links if x.startswith('https://www.museodelprado.es/en/the-collection/art-work/')]
     global artist_links_list
     [artist_links_list.append(x) for x in links if x not in artist_links_list]
 
-artist_links('https://www.museodelprado.es/en/the-collection')
+artist_links('https://www.museodelprado.es/en/the-collection/art-works')
 pprint.pp(artist_links_list)
