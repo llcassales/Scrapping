@@ -4,15 +4,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-s = Service('./chromedriver.exe')
-driver = webdriver.Chrome(service=s)
+#s = Service('https://github.com/llcassales/Scrapping.git')
+driver = webdriver.Chrome("C:/webdrivers/chromedriver.exe")
 
 # Especificamos la web en la cual queremos hacer web scraping
 driver.get('https://www.museodelprado.es/coleccion/obras-de-arte')
 
 # Con la siguiente línea le decimos al código que haga "scroll" hasta el final de la página
 # Es decir, cargará todos los cuadros que hay en la página
-# driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
 # Todos los cuadros en una lista
 # Al usar el argumento find_elementS, en plural, nos originará una lista con todos los elementos
