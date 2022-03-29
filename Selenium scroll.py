@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pprint
 import csv
+import json
 
 browser = webdriver.Chrome("C:/webdrivers/chromedriver.exe")
 
@@ -27,11 +28,15 @@ print(len(list_links))
 list_links = [i for i in list_links if i]
 print(len(list_links))
 
-list_links= [x for x in list_links if x.startswith('https://www.museodelprado.es/coleccion/obra-de-arte/')]
+list_links = [x for x in list_links if x.startswith('https://www.museodelprado.es/coleccion/obra-de-arte/')]
 print(len(list_links))
 
 res = []
 [res.append(x) for x in list_links if x not in res]
 print(len(res))
 pprint.pp(res)
+
+
+with open('test.txt', 'w') as f:
+    f.write(json.dumps(res))
 

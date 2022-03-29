@@ -11,7 +11,9 @@ driver = webdriver.Chrome("C:/webdrivers/chromedriver.exe")
 driver.get('https://www.museodelprado.es/coleccion/obras-de-arte')
 
 # Con la siguiente línea le decimos al código que haga "scroll" hasta el final de la página
-# Es decir, cargará todos los cuadros que hay en la página
+# Es decir, cargará todbeautiful soup ciode example
+#
+# os los cuadros que hay en la página
 # driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 #
 # # Todos los cuadros en una lista
