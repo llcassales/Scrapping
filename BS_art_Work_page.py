@@ -7,14 +7,13 @@ import requests
 with open('test.txt', 'r') as f:
     list = json.loads(f.read())
 
+df = pd.DataFrame()
+
 for url in list:
 # def getInfo(URL):
       content = requests.get(url).text
       soup = BeautifulSoup(content, "html.parser")
-      print(soup.body.h1)
-#
-#
-# #df = pd.DataFrame()
-# for i in list:
-#     print(getInfo(i))
+      x = soup.find('em')
+      df.append(pd.DataFrame(x))
 
+print(df.head(50))
