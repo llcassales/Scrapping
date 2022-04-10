@@ -38,7 +38,7 @@ FILE STRUCTURE
 
 1. File list:
 
-Filename: Art.csv
+Filename: Art - Final(1).csv
 Brief description: Final dataset obtained after performing the scrapping process.
 
 File name: Links.TXT
