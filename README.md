@@ -26,12 +26,12 @@ ACCESS INFORMATION
 
 1. Link to the dataset:
 
-DOI/URL: 
+DOI/URL: https://doi.org/10.5281/zenodo.6433134
 
 VERSION
 -------
 
-1. Last modification date:
+1. Last modification date:10/04/2022
 
 FILE STRUCTURE
 --------------
