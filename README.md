@@ -7,6 +7,8 @@ This repository contains all the files generated for a practice that has been ca
 
 1. Dataset title: 
 
+Technical Details (Characteristics) of the works of the Museo del Prado
+
 
 2. Authorship:
 
@@ -17,11 +19,7 @@ DESCRIPTION
 
 1. Language of the dataset: Spanish.
 
-
-2. Summary:
-
-
-3. Key-words: art work, Prado, Museum
+2. Key-words: art work, Prado, Museum
 
 ACCESS INFORMATION
 ------------------
@@ -54,9 +52,4 @@ Brief description: Python script to retrieve links of art work pages from the ge
 
 
 ---
-
-**PRAC 1**
-
- * Contexto: 
- * Título:
 
